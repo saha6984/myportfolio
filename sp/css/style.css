@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    padding-top: 50px;
+    color: #777;
+}
+
+.navbar {
+    background: #3088d6;
+    border: none;
+    margin: 0;
+}
+
+.h1,
+h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: #555;
+}
+
+.h2,
+h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: #555;
+}
+
+.navbar-default .navbar-brand {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 30px;
+    height: auto;
+    padding: 10px 15px;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #fff;
+    opacity: .9;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 1.6rem;
+    color: #fff;
+    position: relative;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:before {
+    position: absolute;
+    height: 1px;
+    width: 0;
+    content: '';
+    background: #fff;
+    top: 50%;
+    margin-top: -1px;
+    left: 10%;
+    transition: all ease .3s;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    background: none;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a:before,
+.navbar-default .navbar-nav>.active>a:focus:before,
+.navbar-default .navbar-nav>.active>a:hover:before,
+.navbar-default .navbar-nav>li>a:focus:before,
+.navbar-default .navbar-nav>li>a:hover:before {
+    width: 80%;
+}
+
+.navbar-default .navbar-brand span {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    margin-right: 10px;
+    text-align: center;
+    color: #3088d6;
+    font-size: 2.2rem;
+}
+
+section {
+    padding: 50px 0;
+    position: relative;
+}
+
+section.intro-section {
+    background: url(../img/headerbg.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+section.intro-section:before {
+    background: #505050;
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .8;
+}
+
+section.intro-section {
+    color: #fff;
+    text-align: center;
+}
+
+section.intro-section h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.profile-img {
+    display: inline-block;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.services-section {
+    background: #FAFAFA;
+}
+.social-link li{
+    display: inline-block;
+}
+.social-link li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+.social-link li a.facebook{
+    background: #4267b2;
+    
+}
+.social-link li a.twitter{
+    background: #1da1f3;
+    
+}
+.social-link li + li{
+    margin-left: 15px;
+}
+@media(min-width:767px) {
+    body {
+        padding-top: 70px;
+        font-size: 1.8rem;
+        line-height: 1.7;
+    }
+    .navbar-default .navbar-nav>li+li {
+        margin-left: 5px;
+    }
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .top-nav-collapse {
+        padding: 0;
+    }
+    section {
+        padding: 100px 0;
+    }
+    section.intro-section {
+        text-align: left;
+    }
+    section.intro-section h1 {
+        font-size: 8rem;
+    }
+    section.intro-section p {
+        font-size: 2rem;
+    }
+    .h1,
+    h1 {
+        font-size: 4rem;
+    }
+    .h2,
+    h2 {
+        font-size: 4rem;
+    }
+}
